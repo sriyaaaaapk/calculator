@@ -9,11 +9,11 @@ Features :
 
 How to Compile and Run
 
-gcc main.c basic_calculator.c scientific_calculator.c -o calculator
+`` gcc main.c basic_calculator.c scientific_calculator.c -o calculator ``
 
 To run:
 
-./calculator
+`` ./calculator ``
 
 Notes:
 
