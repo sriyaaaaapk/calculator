@@ -21,4 +21,4 @@ Notes:
 
  --> Modular structure for clarity and scalability.
  
- --> Easy to extend (you can add more functions later!).
+ --> More functions can be added later!
