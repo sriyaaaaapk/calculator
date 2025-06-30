@@ -1,24 +1,58 @@
-C Calculator Project : A modular Calculator in C, supporting both Basic and Scientific operations.
+# 🧮 C Calculator Project
 
-Features :
+A modular, command-line calculator built in **C**, supporting both **Basic** and **Scientific** operations.  
+It is designed to be clean, extendable, and beginner-friendly.
 
-🔹 Basic Calculator- Addition, Subtraction, Multiplication, Division
+---
 
-🔹 Scientific Calculator- Power,Square Root, Sine, Cosine, Tangent, Inverse Sine, Cosine, Tangent
+## ✨ Features
 
+### 🔹 Basic Calculator
+- ➕ Addition  
+- ➖ Subtraction  
+- ✖️ Multiplication  
+- ➗ Division (with zero-check)
 
-How to Compile and Run
+### 🔹 Scientific Calculator
+- 🧠 Power  
+- 🧮 Square Root  
+- 📐 Sine, Cosine, Tangent  
+- 🔁 Inverse Trig Functions: `arcsin`, `arccos`, `arctan`
 
-`` gcc main.c basic_calculator.c scientific_calculator.c -o calculator ``
+> All angle inputs are in **degrees**, automatically converted to radians.
 
-To run:
+---
 
-`` ./calculator ``
+## 🗂 Project Structure
 
-Notes:
+```bash
+.
+├── main.c                      # Main driver menu
+├── basic_calculator.c/.h      # Basic operations
+├── scientific_calculator.c/.h # Scientific operations
+├── inputs.c/.h                # Input validation helpers
+├── calculator.exe             # Executable (after build)
+├── .vscode/tasks.json         # Build task config (VS Code)
+└── README.md                  # You're reading it :)
+```
 
- --> Written in pure C language.
+## ⚙️ How to Compile & Run
 
- --> Modular structure for clarity and scalability.
- 
- --> More functions can be added later!
+🛠 Using GCC (manual)
+
+```bash 
+gcc main.c basic_calculator.c scientific_calculator.c inputs.c -o calculator -lm
+./calculator
+```
+
+💻 Using VS Code
+
+```bash 
+- Press Ctrl + Shift + B
+
+- Select Build Calculator Project
+
+- Run ./calculator.exe from terminal
+```
+
+> -lm links the math library required for functions like pow, sin, etc.
