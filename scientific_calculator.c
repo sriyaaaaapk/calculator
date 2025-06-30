@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <math.h>
 #include "scientific_calculator.h"
-#define M_PI 3.14
+#ifndef M_PI
+#define M_PI 3.14159265358979323846 //faced issues with math.h so defining M_PI
+#endif
 
 void power() {
     float base, exp;

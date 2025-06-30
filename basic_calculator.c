@@ -1,32 +1,29 @@
 // basic_calculator.c
 #include <stdio.h>
 #include "basic_calculator.h"
+#include "inputs.h"
 
 void add() {
     float a, b;
-    printf("Enter two numbers: ");
-    scanf("%f %f", &a, &b);
+    gettingtwofloats(&a,&b);
     printf("Result: %.2f\n", a + b);
 }
 
 void subtract() {
     float a, b;
-    printf("Enter two numbers: ");
-    scanf("%f %f", &a, &b);
+    gettingtwofloats(&a,&b);
     printf("Result: %.2f\n", a - b);
 }
 
 void multiply() {
     float a, b;
-    printf("Enter two numbers: ");
-    scanf("%f %f", &a, &b);
+    gettingtwofloats(&a,&b);
     printf("Result: %.2f\n", a * b);
 }
 
 void divide() {
     float a, b;
-    printf("Enter two numbers: ");
-    scanf("%f %f", &a, &b);
+    gettingtwofloats(&a,&b);
     if(b != 0)
         printf("Result: %.2f\n", a / b);
     else

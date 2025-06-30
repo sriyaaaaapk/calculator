@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Calculator Project",
+            "command": "C:\\Users\\barad\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.c",
+                "basic_calculator.c",
+                "scientific_calculator.c",
+                "inputs.c",
+                "-o",
+                "calculator.exe",
+                "-lm"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiles the calculator with all modules"
+        }
+    ]
+}
